@@ -1,0 +1,60 @@
+$primary-color : rgb(53, 36, 209) ; 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    .inner{
+        width: 100%;
+        height: 10vh;
+        background: green;
+    }
+    
+}
+
+.overlay{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0,0,0,.5);
+    top:0;
+    display: none;
+    .input-container{
+        margin-top: 10vh;
+        background: black;
+        height: 10vh;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .search{
+            width:20%;
+           margin:1rem;
+
+        }
+        input{
+            width: 60%;
+            margin: 1rem;
+        }
+        .close{
+            width:10%;
+            margin: 1rem;
+
+        }
+    }
+    .search_content{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+}
+.active{
+    display: block;
+}
+
